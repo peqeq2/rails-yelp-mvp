@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Restaurants</h1>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= link_to restaurant.name, restaurant %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'create a new estaurant', new_restaurant_path %>
